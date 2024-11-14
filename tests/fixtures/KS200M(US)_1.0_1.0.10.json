@@ -44,6 +44,10 @@
             ],
             "err_code": 0,
             "ver": "1.0"
+        },
+        "get_current_brt": {
+            "err_code": 0,
+            "value": 0
         }
     },
     "smartlife.iot.PIR": {
@@ -61,6 +65,17 @@
             "min_adc": 0,
             "trigger_index": 0,
             "version": "1.0"
+        }
+    },
+    "smartlife.iot.sensor_trigger": {
+        "get_default_manual_action": {
+            "err_code": 0,
+            "offToM": 0,
+            "offToS": 10,
+            "offToT": 0,
+            "onToM": 0,
+            "onToS": 10,
+            "onToT": 0
         }
     },
     "system": {

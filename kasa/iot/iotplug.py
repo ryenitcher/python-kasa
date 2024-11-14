@@ -10,7 +10,7 @@ from ..deviceconfig import DeviceConfig
 from ..module import Module
 from ..protocols import BaseProtocol
 from .iotdevice import IotDevice, requires_update
-from .modules import AmbientLight, Antitheft, Cloud, Led, Motion, Schedule, Time, Usage
+from .modules import AmbientLight, Antitheft, Cloud, Led, Motion, SensorTrigger, Schedule, Time, Usage
 
 _LOGGER = logging.getLogger(__name__)
 
@@ -102,3 +102,5 @@ class IotWallSwitch(IotPlug):
             self.add_module(
                 Module.IotAmbientLight, AmbientLight(self, "smartlife.iot.LAS")
             )
+            # Not sure if this applies to plugs as well as switches?
+            self.add_module(Module.IotSensorTrigger, SensorTrigger(self, "smartlife.iot.sensor_trigger"))

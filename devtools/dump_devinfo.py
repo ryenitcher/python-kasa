@@ -406,6 +406,7 @@ async def get_legacy_fixture(protocol, *, discovery_info):
         Call(module="smartlife.iot.LAS", method="get_config"),
         Call(module="smartlife.iot.LAS", method="get_current_brt"),
         Call(module="smartlife.iot.PIR", method="get_config"),
+        Call(module="smartlife.iot.sensor_trigger", method="get_default_manual_action"),
     ]
 
     successes = []

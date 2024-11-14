@@ -85,6 +85,7 @@ class Module(ABC):
     IotAntitheft: Final[ModuleName[iot.Antitheft]] = ModuleName("anti_theft")
     IotCountdown: Final[ModuleName[iot.Countdown]] = ModuleName("countdown")
     IotMotion: Final[ModuleName[iot.Motion]] = ModuleName("motion")
+    IotSensorTrigger: Final[ModuleName[iot.SensorTrigger]] = ModuleName("sensor_trigger")
     IotSchedule: Final[ModuleName[iot.Schedule]] = ModuleName("schedule")
     IotUsage: Final[ModuleName[iot.Usage]] = ModuleName("usage")
     IotCloud: Final[ModuleName[iot.Cloud]] = ModuleName("cloud")

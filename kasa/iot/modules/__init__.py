@@ -11,6 +11,7 @@ from .lighteffect import LightEffect
 from .lightpreset import IotLightPreset, LightPreset
 from .motion import Motion
 from .rulemodule import Rule, RuleModule
+from .sensortrigger import SensorTrigger
 from .schedule import Schedule
 from .time import Time
 from .usage import Usage
@@ -29,6 +30,7 @@ __all__ = [
     "Motion",
     "Rule",
     "RuleModule",
+    "SensorTrigger",
     "Schedule",
     "Time",
     "Usage",
